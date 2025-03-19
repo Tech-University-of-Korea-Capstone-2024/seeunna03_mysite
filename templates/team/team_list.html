@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-3">
+    <div class="row">
+
+        <!-- 1행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 1 %}" class="btn btn-danger w-100">
+                <img src="{% static 'images/teams/KIA.png' %}" style="width:80px;">
+                KIA
+            </a>
+        </div>
+
+        <!-- 2행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 2 %}" class="btn btn-primary w-100">
+                <img src="{% static 'images/teams/삼성.png' %}" style="width:80px;">
+                삼성
+            </a>
+        </div>
+
+        <!-- 3행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 3 %}" class="btn btn-dark w-100">
+                <img src="{% static 'images/teams/두산.png' %}" style="width:80px;">
+                두산
+            </a>
+        </div>
+
+        <!-- 4행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 4 %}" class="btn btn-danger w-100">
+                <img src="{% static 'images/teams/SSG.png' %}" style="width:80px;">
+                SSG
+            </a>
+        </div>
+
+        <!-- 5행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 5 %}" class="btn btn-secondary w-100">
+                <img src="{% static 'images/teams/LG.png' %}" style="width:80px;">
+                LG
+            </a>
+        </div>
+
+        <!-- 6행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 6 %}" class="btn btn-secondary w-100">
+                <img src="{% static 'images/teams/롯데.png' %}" style="width:80px;">
+                롯데
+            </a>
+        </div>
+
+        <!-- 7행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 7 %}" class="btn btn-warning w-100">
+                <img src="{% static 'images/teams/한화.png' %}" style="width:80px;">
+                한화
+            </a>
+        </div>
+
+        <!-- 8행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 8 %}" class="btn btn-primary w-100">
+                <img src="{% static 'images/teams/NC.png' %}" style="width:80px;">
+                NC
+            </a>
+        </div>
+
+        <!-- 9행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 9 %}" class="btn btn-dark w-100">
+                <img src="{% static 'images/teams/KT.png' %}" style="width:80px;">
+                KT
+            </a>
+        </div>
+
+        <!-- 10행 -->
+        <div class="col-md-6 mb-3">
+            <a href="{% url 'team:player_list' 10 %}" class="btn btn-danger w-100" style="background-color:maroon;">
+                <img src="{% static 'images/teams/키움.png' %}" style="width:80px;">
+                키움
+            </a>
+        </div>
+
+    
+</div>
+{% endblock %}

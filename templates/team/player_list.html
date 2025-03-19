@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container my-4">
+    <h2>{{ team.name }} 선수 목록</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>등번호</th>
+                <th>이름</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for player in players %}
+            <tr>
+                <td>{{ player.backnumber }}</td>
+                <td>{{ player.player_id }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="2">등록된 선수가 없습니다.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

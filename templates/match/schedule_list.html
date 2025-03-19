@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container my-4">
+    <div class="card shadow-sm rounded">
+        <div class="card-header">
+            <h4>KBO 리그 경기 일정 3/8</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped text-center align-middle">
+                <tbody>
+                    
+
+                    <div class="card-body">
+                        <table class="table">
+                            <tbody>
+                                
+                                <tr>
+                                    <td class="text-center">13:00</td>
+                                    <td class="text-center">사직</td>
+                                    <td class="text-end">
+                                        <strong>KIA</strong>
+                                        <img src="{% static 'images/teams/KIA.png' %}" style="width:35px;">
+                                    </td>
+                                    <td class="text-center">vs</td>
+                                    <td>
+                                        <img src="{% static 'images/teams/롯데.png' %}" style="width:35px;">
+                                        롯데
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-center">13:00</td>
+                                    <td class="text-center">수원</td>
+                                    <td class="text-end">
+                                        <strong>LG</strong>
+                                        <img src="{% static 'images/teams/LG.png' %}" style="width:35px;">
+                                    </td>
+                                    <td class="text-center">vs</td>
+                                    <td>
+                                        <img src="{% static 'images/teams/KT.png' %}" style="width:35px;">
+                                        KT
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-center">13:00</td>
+                                    <td class="text-center">청주</td>
+                                    <td class="text-end">
+                                        <strong>두산</strong>
+                                        <img src="{% static 'images/teams/두산.png' %}" style="width:35px;">
+                                    </td>
+                                    <td class="text-center">vs</td>
+                                    <td>
+                                        <img src="{% static 'images/teams/한화.png' %}" style="width:35px;">
+                                        한화
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-center">13:00</td>
+                                    <td class="text-center">대구</td>
+                                    <td class="text-end">
+                                        <strong>SSG</strong>
+                                        <img src="{% static 'images/teams/SSG.png' %}" style="width:35px;">
+                                    </td>
+                                    <td class="text-center">vs</td>
+                                    <td>
+                                        <img src="{% static 'images/teams/삼성.png' %}" style="width:35px;">
+                                        삼성
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="text-center">13:00</td>
+                                    <td class="text-center">창원</td>
+                                    <td class="text-end">
+                                        <strong>키움</strong>
+                                        <img src="{% static 'images/teams/키움.png' %}" style="width:35px;">
+                                    </td>
+                                    <td class="text-center">vs</td>
+                                    <td>
+                                        <img src="{% static 'images/teams/NC.png' %}" style="width:35px;">
+                                        NC
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
